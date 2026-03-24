@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>موقعي</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== RESET ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Tajawal', sans-serif;
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  background:#f5f5f5;
+  direction: rtl;
+}
+
+/* ===== HEADER ===== */
+header{
+  background:#4CAF50;
+  color:white;
+  text-align:center;
+  padding:20px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+/* ===== NAV ===== */
+nav{
+  background:#333;
+}
+
+nav ul{
+  display:flex;
+  justify-content:center;
+  list-style:none;
+  flex-wrap:wrap;
+}
+
+nav ul li{
+  margin:10px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+}
+
+/* ===== MAIN ===== */
+main{
+  flex:1;
+  padding:20px;
+}
+
+/* ===== SECTION ===== */
+.section-title{
+  font-size:20px;
+  margin-bottom:20px;
+}
+
+/* ===== GRID ===== */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+  gap:15px;
+}
+
+/* ===== CARD ===== */
+.card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#333;
+  color:white;
+  text-align:center;
+  padding:15px;
+  font-size:14px;
+}
+
+/* ===================== */
+/* 📲 TABLET */
+/* ===================== */
+@media (min-width: 600px){
+  header{
+    font-size:26px;
+  }
+
+  .section-title{
+    font-size:22px;
+  }
+}
+
+/* ===================== */
+/* 💻 DESKTOP */
+/* ===================== */
+@media (min-width: 1024px){
+  header{
+    font-size:30px;
+  }
+
+  .section-title{
+    font-size:24px;
+  }
+
+  nav ul li a{
+    font-size:16px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  مرحباً بك في موقعي
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#">الرئيسية</a></li>
+    <li><a href="#">الخدمات</a></li>
+    <li><a href="#">من نحن</a></li>
+    <li><a href="#">تواصل معنا</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <div class="section-title">أقسام الموقع</div>
+
+  <div class="grid">
+    <div class="card">قسم 1</div>
+    <div class="card">قسم 2</div>
+    <div class="card">قسم 3</div>
+    <div class="card">قسم 4</div>
+    <div class="card">قسم 5</div>
+    <div class="card">قسم 6</div>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 موقع تجريبي
+</footer>
+
+</body>
+</html>
+</html>
